@@ -1,6 +1,7 @@
 import './App.css';
 import './components/IngredientList/IngredientList.jsx';
 import './components/BurgerStack/BurgerStack.jsx'
+import IngredientList from './components/IngredientList/IngredientList.jsx';
 
 
 const App = () => {
@@ -26,6 +27,8 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
       {/* List & Stack components */}
+      <IngredientList />
+      <BurgerStack />
       </section>
     </main>
   );
