@@ -22,6 +22,7 @@ const App = () => {
     { name: 'Swiss Cheese', color: '#F1E1A8' },
   ];
 
+  // BUILD OUT FUNCTIONALITY OF THIS APP
   // useState here
 
   //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
