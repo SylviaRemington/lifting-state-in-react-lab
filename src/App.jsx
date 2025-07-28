@@ -22,6 +22,8 @@ const App = () => {
     { name: 'Swiss Cheese', color: '#F1E1A8' },
   ];
 
+  // useState here
+
   return (
     <main>
       <h1>Burger Stacker</h1>
