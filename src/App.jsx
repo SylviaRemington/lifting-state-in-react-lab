@@ -1,4 +1,7 @@
 import './App.css';
+import './components/IngredientList/IngredientList.jsx';
+import './components/BurgerStack/BurgerStack.jsx'
+
 
 const App = () => {
   const availableIngredients = [
