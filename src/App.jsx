@@ -24,6 +24,11 @@ const App = () => {
 
   // useState here
 
+  //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
+
+  //addToBurger function --with handle?
+  //removeFromBurger function --with handle?
+
   return (
     <main>
       <h1>Burger Stacker</h1>
