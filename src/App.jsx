@@ -53,7 +53,32 @@ const App = () => {
 
 export default App;
 
-// Notes so I have a plan as to what I'm doing:
+
+// What I need to do left as of 11:30pm July 28th:
+/*
+✅ What I’ve already done:
+Set up App.jsx and IngredientList.jsx
+Passed props correctly
+Created the handleAddToBurger function
+Rendered the ingredient list with names and colors
+Used inline styling
+Console log works
+
+What I need to do next:
+Build BurgerStack.jsx:
+Loop through props.stack
+Display each ingredient’s name and color
+Add an “X” button to remove ingredients
+Create handleRemoveFromBurger in App.jsx:
+Use it to update the stack state by removing a selected ingredient
+Pass props to BurgerStack from App.jsx:
+Send both stack and handleRemoveFromBurger
+Style it if needed using your provided CSS file
+
+*/
+
+
+// Notes so I have a plan as to what I'm doing (as of 130pm July 28th):
 /*
 What I need to do:
 1. Initialize the stack state as an empty array
