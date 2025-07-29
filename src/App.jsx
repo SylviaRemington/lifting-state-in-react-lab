@@ -23,7 +23,7 @@ const App = () => {
 
   // BUILD OUT FUNCTIONALITY OF THIS APP
 
-  const [stack, setStack] = useState();
+  const [stack, setStack] = useState([]); //initializing stack state as an empty array
  
   //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
 
