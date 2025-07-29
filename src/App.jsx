@@ -35,7 +35,8 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
       {/* List & Stack components */}
-      <IngredientList />
+      {/* Note to self: JSX requires props to be passed in key=value format. */}
+      <IngredientList ingredients={availableIngredients} />
       <BurgerStack />
       </section>
     </main>

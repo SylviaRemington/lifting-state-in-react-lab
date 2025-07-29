@@ -23,7 +23,7 @@
 - **Pay special attention to the availableIngredients array held in src/App.jsx. You’ll likely begin by rendering this data.**
 
 ## User Stories
-Here are the user stories for this lab:
+<em>Here are the user stories for this lab:<em>
 
 - As a user, I want to be able to see a list of the ingredients that can be added to my burger on the left side of the screen.
 
