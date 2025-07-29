@@ -24,10 +24,17 @@ const App = () => {
   // BUILD OUT FUNCTIONALITY OF THIS APP
 
   const [stack, setStack] = useState([]); //initializing stack state as an empty array
+
+  const handleAddToBurger = (availableIngredient) => {
+    console.log('AddToBurger is working!');
+    //creating a new array that includes all items currently in stack plus any new availableIngredient that I've added.
+    setStack([...stack, availableIngredient]);
+  }
+
  
   //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
 
-  //addToBurger function --with handle?
+
   //removeFromBurger function --with handle?
 
   return (
@@ -35,8 +42,9 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
       {/* List & Stack components */}
-      {/* Note to self: JSX requires props to be passed in key=value format. */}
-      <IngredientList ingredients={availableIngredients} />
+      {/* Note/Reminder to self: JSX requires props to be passed in key=value format. */}
+      {/* Passing availableIngredients because passing the full array to IngredientList.jsx and not just one part of the array. */}
+      <IngredientList ingredients={availableIngredients} addToBurger={handleAddToBurger} />
       <BurgerStack />
       </section>
     </main>
