@@ -1,6 +1,6 @@
 # Lifting State in React Lab
 
-## About:
+## About
 
 - Welcome to Reactville, a constantly evolving virtual metropolis. Let’s build this digital town together, one component at a time.
 
