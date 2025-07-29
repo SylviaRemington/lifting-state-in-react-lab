@@ -1,8 +1,7 @@
+import { useState } from "react";
 import './App.css';
-import './components/IngredientList/IngredientList.jsx';
-import './components/BurgerStack/BurgerStack.jsx'
 import IngredientList from './components/IngredientList/IngredientList.jsx';
-
+import BurgerStack from './components/BurgerStack/BurgerStack.jsx'
 
 const App = () => {
   const availableIngredients = [
@@ -23,8 +22,9 @@ const App = () => {
   ];
 
   // BUILD OUT FUNCTIONALITY OF THIS APP
-  // useState here
 
+  const [stack, setStack] = useState();
+ 
   //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
 
   //addToBurger function --with handle?
