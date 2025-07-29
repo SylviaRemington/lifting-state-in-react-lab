@@ -23,28 +23,32 @@ const App = () => {
 
   // BUILD OUT FUNCTIONALITY OF THIS APP
 
-  const [stack, setStack] = useState([]); //initializing stack state as an empty array
+  // Initializing stack state as an empty array
+  const [stack, setStack] = useState([]); 
 
+  // Function to add an availableIngredient to the stack
   const handleAddToBurger = (availableIngredient) => {
     console.log('AddToBurger is working!');
     //creating a new array that includes all items currently in stack plus any new availableIngredient that I've added.
     setStack([...stack, availableIngredient]);
   }
 
- 
-  //need 2 child components in app.jsx -- one responsible for rendering elements in availableIngredients & other for elements in stack
-
-
+  // Function to remove an ingredient from the stack - maybe do it by index? 
   //removeFromBurger function --with handle?
+ 
 
   return (
     <main>
       <h1>Burger Stacker</h1>
       <section>
-      {/* List & Stack components */}
+      {/* List & Stack components below - IngredientList & BurgerStack */}
+
       {/* Note/Reminder to self: JSX requires props to be passed in key=value format. */}
       {/* Passing availableIngredients because passing the full array to IngredientList.jsx and not just one part of the array. */}
+      {/* Below, I'm passing the available ingredients array & the function handleAddToBurger. */}
       <IngredientList ingredients={availableIngredients} addToBurger={handleAddToBurger} />
+
+      {/* Passing the current stack array here & passing the function handleRemoveFromBurger. */}
       <BurgerStack />
       </section>
     </main>
