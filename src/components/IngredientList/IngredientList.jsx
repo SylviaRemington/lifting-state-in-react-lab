@@ -5,8 +5,9 @@ const IngredientList = (props) => {
     <ul>
       {props.ingredients.map((ingredient, index) => (
         // .map can only return one single item, thus button is in li instead of two separate items / they are linked that way
-        <li>{ingredient.name}
-        <button onClick={() => props.addToBurger(ingredient)}>+</button>
+        <li key={index}>
+          {ingredient.name}
+          <button onClick={() => props.addToBurger(ingredient)}>+</button>
         </li>
       ))} 
     </ul>
