@@ -44,3 +44,60 @@ const App = () => {
 
 export default App;
 
+// Notes so I have a plan as to what I'm doing:
+/*
+What I need to do:
+1. Initialize the stack state as an empty array
+You’ll be adding ingredients to this array when the user clicks +
+
+2. Pass Props to Your Components
+Pass availableIngredients and addToBurger() to IngredientList
+
+Pass stack and removeFromBurger() to BurgerStack
+
+3. Implement the addToBurger() Function
+Takes in the clicked ingredient
+
+Adds it to the top of the stack (push it to the array)
+
+Updates the state with the new array
+
+4. Implement the removeFromBurger() Function
+Takes in the index or ID of the ingredient to remove
+
+Removes that specific ingredient from the stack
+
+Updates the state with the new array
+
+5. In IngredientList Component:
+Loop through props.availableIngredients
+
+For each item:
+
+Show the name and color
+
+Add a + button
+
+When clicked, call props.addToBurger(ingredient)
+
+6. In BurgerStack Component:
+Loop through props.stack
+
+For each item:
+
+Show the name and color
+
+Add an X button
+
+When clicked, call props.removeFromBurger(index)
+
+TIPS TO KEEP IN MIND:
+Use style={{ backgroundColor: ingredient.color }} to show ingredient colors.
+
+Remember to give each <li> a unique key when mapping.
+
+To “stack” the burger from bottom to top, you may want to display the newest ingredient at the end of the array.
+
+Keep keep components basic (they just display and call props functions) — the logic lives in App.
+
+*/
