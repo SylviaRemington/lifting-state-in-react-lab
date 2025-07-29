@@ -35,7 +35,7 @@ const App = () => {
 
   // Function to remove an ingredient from the stack - maybe do it by index? 
   //removeFromBurger function --with handle?
- 
+  
 
   return (
     <main>

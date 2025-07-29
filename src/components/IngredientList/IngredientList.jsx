@@ -21,7 +21,7 @@ const IngredientList = (props) => {
 
           {/* Adding the + button and making sure '+' is on the button */}
           <button onClick={() => props.addToBurger(ingredient)}>+</button>
-          
+
         </li>
       ))} 
     </ul>
@@ -31,3 +31,4 @@ const IngredientList = (props) => {
 };
 
 export default IngredientList;
+
