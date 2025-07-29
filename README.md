@@ -1,6 +1,6 @@
 # Lifting State in React Lab
 
-### About:
+## About:
 
 - Welcome to Reactville, a constantly evolving virtual metropolis. Let’s build this digital town together, one component at a time.
 
@@ -43,7 +43,7 @@
 
 3. Reference the provided user stories to build out the remaining functionality of this application.
 
-### Hints
+## Hints
 1. There should be two child components in src/App.jsx. One will be responsible for rendering elements in availableIngredients, and the other for elements in stack.
 
 2. Your application will require two functions in src/App.jsx. One called addToBurger and another called removeFromBurger. Think carefully about what arguments might need to be passed in to each function.
