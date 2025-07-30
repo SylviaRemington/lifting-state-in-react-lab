@@ -14,6 +14,7 @@ const IngredientList = (props) => {
       {/* Using .map() to loop over the ingredients array. */}
       {props.ingredients.map((ingredient, index) => (
         // .map can only return one single item, thus button is in li instead of two separate items / they are linked that way
+        
         // Note to self: The reason there are two {{ and }} is because - first one tells JSX that writing JS & second is the JS object I'm passing to the style attribute.
         <li key={index} style={{ backgroundColor: ingredient.color }}>
 
