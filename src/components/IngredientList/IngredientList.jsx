@@ -10,6 +10,7 @@ const IngredientList = (props) => {
 
   return (
     <ul>
+      {/* mapping through props.ingredients */}
       {/* Using .map() to loop over the ingredients array. */}
       {props.ingredients.map((ingredient, index) => (
         // .map can only return one single item, thus button is in li instead of two separate items / they are linked that way

@@ -42,7 +42,7 @@ const App = () => {
     // updating the stack state by creating a new array that excludes the item at indexToRemove
     // also below, the first argument of (_) is the current item in the array
     setStack(stack.filter((_, index) => index !== indexToRemove));
-    console.log('Removing from stack at index#:', indexToRemove);
+    console.log('Removing from stack at index#:', indexToRemove); //working
   }
 
 
