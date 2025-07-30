@@ -38,6 +38,9 @@ const App = () => {
   // Function to remove an ingredient from the stack - maybe do it by index? 
   //removeFromBurger function --with handle?
   const handleRemoveFromBurger = (indexToRemove) => {
+
+    // updating the stack state by creating a new array that excludes the item at indexToRemove
+    // also below, the first argument of (_) is the current item in the array
     setStack(stack.filter((_, index) => index !== indexToRemove));
     console.log('Removing from stack at index#:', indexToRemove);
   }
@@ -55,7 +58,7 @@ const App = () => {
       <IngredientList ingredients={availableIngredients} addToBurger={handleAddToBurger} />
 
       {/* Passing the current stack array here & passing the function handleRemoveFromBurger. */}
-      <BurgerStack />
+      <BurgerStack stack={stack} removeFromBurger={handleRemoveFromBurger}/>
       </section>
     </main>
   );
