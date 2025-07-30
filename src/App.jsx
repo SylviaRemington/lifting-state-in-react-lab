@@ -77,20 +77,20 @@ Rendered the ingredient list with names and colors
 Used inline styling
 Console log works
 
-What I need to do next:
+✅ What I finished 3:13pm July 30th:
 Build BurgerStack.jsx:
 Loop through props.stack
 Display each ingredient’s name and color
 Add an “X” button to remove ingredients
 Create handleRemoveFromBurger in App.jsx:
 Use it to update the stack state by removing a selected ingredient
-Pass props to BurgerStack from App.jsx:
+Pass props to BurgerStack from App.jsx
 Send both stack and handleRemoveFromBurger
-Style it if needed using your provided CSS file
-
+Style it if needed using my provided CSS file & adding to it
 */
 
 
+//Previously
 // Notes so I have a plan as to what I'm doing (as of 130pm July 28th):
 /*
 What I need to do:
