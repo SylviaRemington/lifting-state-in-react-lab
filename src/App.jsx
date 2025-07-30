@@ -28,14 +28,20 @@ const App = () => {
 
   // Function to add an availableIngredient to the stack
   const handleAddToBurger = (availableIngredient) => {
-    console.log('AddToBurger is working!');
+    console.log('AddToBurger is working!'); //working
+
     //creating a new array that includes all items currently in stack plus any new availableIngredient that I've added.
     setStack([...stack, availableIngredient]);
+    console.log("Added to stack:", availableIngredient.name); //working
   }
 
   // Function to remove an ingredient from the stack - maybe do it by index? 
   //removeFromBurger function --with handle?
-  
+  const handleRemoveFromBurger = (indexToRemove) => {
+    setStack(stack.filter((_, index) => index !== indexToRemove));
+    console.log('Removing from stack at index#:', indexToRemove);
+  }
+
 
   return (
     <main>

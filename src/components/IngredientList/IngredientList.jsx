@@ -5,7 +5,7 @@
 
 const IngredientList = (props) => {
 
-  // Check if ingredients array has items before mapping & I think I have to also check if the array exists too?
+  // Addtl I could add to this if I have time: check if ingredients array has items before mapping & I think I have to also check if the array exists too?
   // ...code here....
 
   return (
